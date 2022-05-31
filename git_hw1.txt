@@ -1,0 +1,74 @@
+1. Посмотреть где я
+pwd
+2. Создать папку
+mkdir folder
+3. Зайти в папку
+cd foldername
+4. Создать 3 папки
+mkdir foldername_1 foldername_2 foldername_3
+5. Войти в любую папку
+cd foldername
+6. Создать 5 файлов (3 txt , 2 json)
+touch file_1.txt file_2.txt file_3.txt file_4.json file_5.json
+7. Создать 3 папки
+ mkdir foldername_11 foldername_22 foldername_33
+ 8. Посмотреть содержимое папки
+ls -la
+9, 10, 11. Открыть любой txt файл, написать туда, сохранить и выйти
+vim filename.txt
+12312
+:wq
+12. выйти из папки на уровень выше
+cd ..
+13. переместитб любые два файла в другую папку
+mv foldername_1/file_1.txt foldername_2
+14. скопировать 2 файла, в другую папку
+cp foldername_1/file_2.json foldername_2
+cp foldername_1/file_2.json foldername_2
+15. найти файл по имени
+find . -name "название файла*"
+16. просмотреть содержимое в реальном времени
+cat qa_2/file1.txt 
+17. вывести первые строки
+head -2 foldername/filename.txt
+18. вывести последние 2 строки
+tail -2 filename.txt
+19. просмотреть содержимое длинного файла
+less filename.txt
+20. вывести дату и время
+date
+
+
+
+Задание 1
+Denis Belyaev@DESKTOP-PUCSFKA MINGW64 ~/git/lesson_1
+$ curl "http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    50  100    50    0     0     59      0 --:--:-- --:--:-- --:--:--    59[
+  "(set_your_String)",
+  "(set_your_number)"                                                   
+]                                                                                           #отправить запрос
+  
+
+Denis Belyaev@DESKTOP-PUCSFKA MINGW64 ~/git/lesson_1
+$ curl "http://162.55.220.72:5005/get_method?name="Denis"&age="27""
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    23  100    23    0     0    117      0 --:--:-- --:--:-- --:--:--   117[
+  "Denis",
+  "27"                                                                                     # выполнить задание Task1
+  
+  
+  
+  
+  Задание 2
+   Задание 2
+  #!/bin/bash
+cd ~/testing/terminal_hw_1/lesson_1
+mkdir qa_1 qa_2 qa_3
+cd ~/testing/terminal_hw_1/lesson_1/qa_1
+touch file.txt file2.txt file3.txt file4.json file5.json
+mkdir papka_1 papka_2
+ls -la
+mv file2.txt ~/testing/terminal_hw_1/lesson_1/qa_2
