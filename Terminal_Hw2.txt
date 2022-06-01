@@ -117,9 +117,7 @@ inner_dir_1/tf_3.txt:the second 2
 tf_2.txt:the second 2
 
  30. Найти только путь и название файла в строках которых есть комбинация букв “second” в текущей папке
-$ grep -rl "second" ~/testing/terminal_hw_2/dir_1
-/c/Users/Denis Belyaev/testing/terminal_hw_2/dir_1/inner_dir_1/tf_3.txt
-/c/Users/Denis Belyaev/testing/terminal_hw_2/dir_1/tf_2.txt
+$ grep -Lr "second" 
 
  31. Найти все строки во всех файлах где нет комбинации “second”
 $ grep -v -r -h "second"
