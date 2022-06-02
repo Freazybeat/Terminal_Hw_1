@@ -146,11 +146,7 @@ the sec 3
 the seCond 2
 
  32. Найти только название и путь к файлам где нет комбинации “second”
- $ grep -Rvl "second" ~/testing/terminal_hw_2/dir_1
-/c/Users/Denis Belyaev/testing/terminal_hw_2/dir_1/inner_dir_1/tf_3.txt
-/c/Users/Denis Belyaev/testing/terminal_hw_2/dir_1/inner_dir_1/tf_4.txt
-/c/Users/Denis Belyaev/testing/terminal_hw_2/dir_1/inner_dir_1/tF_5.txt
-/c/Users/Denis Belyaev/testing/terminal_hw_2/dir_1/tf_2.txt
+ $ grep -Lr "second" 
 
  33. Вывести в терминал 4 последних строк любого текстового файла
  $ tail -4 ./inner_dir_1/tf_5.txt
